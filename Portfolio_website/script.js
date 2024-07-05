@@ -92,3 +92,25 @@ ScrollReveal().reveal('.left',{origin:'left'});
 ScrollReveal().reveal('.right',{origin:'right'});
 ScrollReveal().reveal('.serv-content',{origin:'bottom'});
 ScrollReveal().reveal('.webdev',{origin:'top'});
+/* send message */
+function sendMail(){
+        var templateParams = {
+            name: document.getElementById("#name").value,
+            email: document.getElementById("#email").value,
+            subject: document.getElementById("#subject").value,
+            message: document.getElementById("#message").value,
+        };
+        var service_id = "service_g1qv1ob";
+        var template_id = "template_uaaeqfc";
+
+        emailjs.send(service_id, template_id, templateParams)
+            .then( (res) => {
+                console.log(res);
+                alert("Message sent successfully");
+            })
+            .catch( (err) => {
+                console.log(err);
+                alert("Message not sent");
+            });
+}
+
