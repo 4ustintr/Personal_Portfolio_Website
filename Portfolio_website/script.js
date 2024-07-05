@@ -95,10 +95,10 @@ ScrollReveal().reveal('.webdev',{origin:'top'});
 /* send message */
 function sendMail(){
         var templateParams = {
-            name: document.getElementById("#name").value,
-            email: document.getElementById("#email").value,
-            subject: document.getElementById("#subject").value,
-            message: document.getElementById("#message").value,
+            from_name: document.getElementById("name").value,
+            from_email: document.getElementById("email").value,
+            from_subject: document.getElementById("Subject").value,
+            from_message: document.getElementById("message").value,
         };
         var service_id = "service_g1qv1ob";
         var template_id = "template_uaaeqfc";
@@ -108,9 +108,10 @@ function sendMail(){
                 console.log(res);
                 alert("Message sent successfully");
             })
-            .catch( (err) => {
+            .cathch( (err) => {
                 console.log(err);
-                alert("Message not sent");
+                alert("Error sending message");
             });
 }
+
 
