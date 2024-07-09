@@ -91,7 +91,7 @@ ScrollReveal().reveal('.title',{origin:'bottom'});
 ScrollReveal().reveal('.left',{origin:'left'});
 ScrollReveal().reveal('.right',{origin:'right'});
 ScrollReveal().reveal('.serv-content',{origin:'bottom'});
-ScrollReveal().reveal('.webdev',{origin:'top'});
+ScrollReveal().reveal('.webdev',{origin:'right'});
 /* send message */
 function sendMail(){
         var templateParams = {
