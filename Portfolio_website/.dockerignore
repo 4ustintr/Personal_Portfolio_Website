@@ -1,0 +1,9 @@
+# Đặt các pattern để loại bỏ các file/thư mục không cần thiết
+.git
+.DS_Store
+node_modules
+npm-cache
+yarn-cache
+# Các file cấu hình cá nhân
+.env
+.vscode

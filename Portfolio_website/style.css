@@ -147,7 +147,6 @@ section .title::after{
     font-size: 50px;
     font-weight: 500;
     cursor: pointer;
-
 }
 
 /* menu btn styling */
@@ -356,6 +355,8 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+
 .services .serv-content .card:hover{
     background: var(--primary-color);
 }
